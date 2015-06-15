@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Text shadow - new style</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<h1 id="apply_shadow">12:45</h1>
+<form id="text_shadow">
+	
+	<div class="group">
+		<!-- Darkness -->
+		<label for="darkness">Darkness</label>
+		<input id="darkness" type="number" name="darkness" value="0.1" min="0.01" max="0.5" step="0.01"><br>
+	</div>
+
+	<div class="group">
+		<!-- Reach -->
+		<label for="reach">Reach</label>
+		<input id="reach" type="number" name="reach" value="10" min="0" max="100" step="10"><br>
+	</div>
+
+	<div class="group">
+		<!-- Blur -->
+		<label for="blur">Blur</label>
+		<input id="blur" type="number" name="blur" value="7" min="0" max="25" step="1"><br>
+	</div>
+
+	<div class="group last">
+		<!-- Density -->
+		<label for="density">Density</label>
+		<input id="density" type="number" name="density" value="3" min="1" max="5" step="1"><br>
+	</div>
+	<button type="button" onclick="textShadow.init()">Apply shadow</button>
+
+</form>
+<footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/main.js"></script>
+</footer>
+</body>
+</html>
